@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("/assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+span{
+
+}
+.menu{
+  height: 80px;
+}
+.logo{
+  max-width:100%;
+  heigh:45px
+}
+.bord{
+  border-right: 0.2px solid gray;
+}
+.language{
+
+  border-right:1px solid #217ac5;
+  height: 80px;
+  line-height: 80px;
+
+
+}
+.lang{
+  padding: 0;
+}
+.eyes{
+  border-right:1px solid #217ac5;
+  height: 80px;
+  line-height: 80px;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px
+}
+.col-1{
+  margin-right: 20px;
+}
+header{
+  overflow-x: hidden;
+  overflow-y: hidden ;
+}
