@@ -4,6 +4,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +13,7 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
     BrowserModule,
     MatToolbarModule,
     MatIconModule,
-    MatBottomSheetModule
+    MatBottomSheetModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
