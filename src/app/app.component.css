@@ -38,10 +38,13 @@ span{
   padding-left: 10px;
   padding-right: 10px
 }
-.col-1{
-  margin-right: 20px;
-}
 header{
   overflow-x: hidden;
   overflow-y: hidden ;
 }
+
+.marg{
+  margin: 0 15% 0 15%;
+}
+
+
