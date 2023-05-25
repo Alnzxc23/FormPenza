@@ -16,9 +16,6 @@ span{
   max-width:100%;
   heigh:45px
 }
-.bord{
-  border-right: 0.2px solid gray;
-}
 .language{
 
   border-right:1px solid #217ac5;
@@ -36,7 +33,8 @@ span{
   line-height: 80px;
   display: block;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
+  width: 70px;
 }
 header{
   overflow-x: hidden;
@@ -44,7 +42,9 @@ header{
 }
 
 .marg{
-  margin: 0 15% 0 15%;
+  margin: 0 5% 0 5%;
 }
+
+
 
 
