@@ -1,42 +1,110 @@
 <header class="name">
-  <div class="p-0 m-0">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg text-light lang " style="background-color: #2589de">
-        <div class="marg d-flex w-100">
-          <div class="col-9 logo d-flex">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                    aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar" href="index.php">
-              <img src="assets/images/government_logo.png" class="logo" width="45px" heigh="55" alt="logo">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="badge badge-primary text-wrap text-start" style="width: 19rem;">
-                <p class="h5 m-0 p-0">Губернатор
-                  <ins>|</ins>
-                  Правительство
-                </p>
-                <p class="text-uppercase h5 m-0 p-0">Пензенской области</p>
-                <p class="h6 m-0 p-0"> Официальный сайт</p>
+  <div class="container-fluid">
+    <div class="p-0 m-0">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg text-light lang " style="background-color: #2589de">
+          <div class="marg d-flex w-100">
+            <div class="col-9 logo d-flex">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar" href="index.php">
+                <img src="assets/images/government_logo.png" class="logo" width="45px" heigh="55" alt="logo">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="badge badge-primary text-wrap text-start" style="width: 19rem;">
+                  <p class="h5 m-0 p-0">Губернатор
+                    <ins>|</ins>
+                    Правительство
+                  </p>
+                  <p class="text-uppercase h5 m-0 p-0">Пензенской области</p>
+                  <p class="h6 m-0 p-0"> Официальный сайт</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-1">
-            <nav class="nav nav-pills nav-fill language">
-              <a class="nav-item text-light " aria-current="page" href="#">Ru</a>
-              <a class="nav-item text-light" href="#">En</a>
-              <a class="nav-item text-light" href="#">De</a>
-              <a class="nav-item text-light " style="" href="#" aria-disabled="true">Cn</a>
-            </nav>
+            <div class="col-1">
+              <nav class="nav nav-pills nav-fill language">
+                <a class="nav-item text-light " aria-current="page" href="#">Ru</a>
+                <a class="nav-item text-light" href="#">En</a>
+                <a class="nav-item text-light" href="#">De</a>
+                <a class="nav-item text-light " style="" href="#" aria-disabled="true">Cn</a>
+              </nav>
+            </div>
+            <div class="col-1 language d-flex justify-content-center">Обратная связь</div>
+            <div class="d-flex"><a class="eyes"><img src="assets/images/blind_icon.png"></a></div>
+            <div class="col-1" style="line-height: 80px; padding-left: 15px"><img
+              src="assets/images/authorization_icon.png"> Войти
+            </div>
           </div>
-          <div class="col-1 language d-flex justify-content-center">Обратная связь</div>
-          <div class="d-flex"><a class="eyes justify-content-center"><img src="assets/images/blind_icon.png"></a></div>
-          <div class="col-1" style="line-height: 80px; padding-left: 15px"><img src="assets/images/authorization_icon.png"> Войти</div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
+<section class="form">
+  <div class="container-fluid content p-0">
+    <div class="heading">
+      <h1>Виртуальная приёмная</h1>
+    </div>
+    <div class="container-fluid pad">
+      <div class="row">
+        <div class="col">
+          <div class="feedForm">
+            <p class="h3 m-0">Заполните форму</p>
+            <p class="gray">Поля, помеченные «*» обязательны для заполнения</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Эл. адрес</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Пароль</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Адрес</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Проспект Ленина">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Адрес 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Квартира">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Город</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Брянск">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Область</label>
+            <select id="inputState" class="form-select">
+              <option selected>Выберите...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Индекс</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Проверить меня
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Войти в систему</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
