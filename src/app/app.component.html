@@ -44,67 +44,190 @@
     </div>
   </div>
 </header>
-<section class="form">
+<section class="form" style="margin-bottom: 5%">
   <div class="container-fluid content p-0">
     <div class="heading">
       <h1>Виртуальная приёмная</h1>
     </div>
     <div class="container-fluid pad">
       <div class="row">
-        <div class="col">
+        <div class="col p-0">
           <div class="feedForm">
             <p class="h3 m-0">Заполните форму</p>
             <p class="gray">Поля, помеченные «*» обязательны для заполнения</p>
           </div>
         </div>
       </div>
-      <div class="row">
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Эл. адрес</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Пароль</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Адрес</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Проспект Ленина">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Адрес 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Квартира">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">Город</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="Брянск">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">Область</label>
-            <select id="inputState" class="form-select">
-              <option selected>Выберите...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Индекс</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Проверить меня
-              </label>
+      <div class="main-content ">
+        <form>
+          <div class="row">
+            <div class="col-10 p-0 selectItem">
+              <label for="inputState" class="form-label">К кому хотите обратиться *</label>
+              <select id="inputState" class="form-select" style="background-color: #f9f9f9; width: 96%">
+                <option selected>Выберите...</option>
+                <option>...</option>
+              </select>
             </div>
           </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Войти в систему</button>
+          <div class="inputItem">
+          <div class="row">
+            <div class="col-md-3 p-0" style="margin: 0 33px 0 0">
+              <label for="inputPassword4 inputItem" class="form-label">Фамилия</label>
+              <input type="password " class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-3">
+              <label for="inputPassword4" class="form-label">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-3 selectItem">
+              <label for="inputState" class="form-label">К кому хотите обратиться *</label>
+              <select id="inputState" class="form-select" style="background-color: #f9f9f9;">
+                <option selected>Выберите...</option>
+                <option>...</option>
+              </select>
+            </div>
+
+          <div class="row">
+            <div class="col-md-3 p-0">
+              <label for="inputPassword4" class="form-label">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-3">
+              <label for="inputPassword4" class="form-label">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 p-0">
+              <label for="inputPassword4" class="form-label">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-3">
+              <label for="inputPassword4" class="form-label">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-4 p-0 textArea" style="margin: 0 40px 0 0">
+                <label for="inputPassword4" class="form-label">В какие органы обращались</label>
+                <textarea type="password" class="form-control" id="inputPassword4"></textarea>
+              </div>
+              <div class="col-md-4 textArea" >
+                <label for="inputPassword4" class="form-label">Текст обращения*</label>
+                <textarea type="password" class="form-control"  id="inputPassword4"></textarea>
+              </div>
+            </div>
+            </div>
+          <div class="row">
+            <div class="col-md-3 p-0">
+              <div class="form-group">
+                <div class="title">Прикрепить файл</div>
+                <div class="file_image" style="">
+                  <button type="button"></button>
+                  <div></div>
+                  <input type="file" name="ufile">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="captcha p-0">
+              <label for="inputPassword4" class="form-label">Контрольный код*</label>
+              <div class="col-md-5 d-flex">
+                <img src="assets/images/captcha.jpg">
+                <input type="password" class="form-control" id="inputPassword4" style="width: 30%; margin-left: 3%">
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row captcha">
+            <div class="col-12 p-0">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Настоящим подтверждаю, что я даю согласие на обработку моих персональных данных
+                </label>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    <a href="https://pnzreg.ru/virtual-reception/reception-of-citizens/politika-konfidentsialnosti.php">Политика конфиденциальности</a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row captcha">
+            <div class="col-12 p-0">
+              <button type="submit" class="buttonAuth fw-bold">Отправить обращение</button>
+            </div>
           </div>
         </form>
+        <div class="feedInfo" style="max-width: none; margin-top:30px; ">
+          <p>Авторизуйтесь в личном кабинете чтобы получать уведомления о ходе рассмотрения обращения.</p>
+          <p>В случае необходимости в подтверждение своих доводов гражданин вправе приложить к обращению необходимые документы и материалы в электронной форме, воспользовавшись функцией «Прикрепить файл».</p>
+          <p>Обращаем внимание, что прикрепляемые документы и материалы служат лишь подтверждением доводов автора обращения, изложенных в тексте обращения.</p>
+          <p>При подключении оборудования пользователя к сети «Интернет» по выделенным каналам связи с использованием технологий ADSL, 3G, 4G, WiFi и иных технологий, обеспечивающих аналогичные скорости передачи
+            данных в сети «Интернет», передача и обработка файла(ов) с суммарным размером:<br>
+            - до 5 Мб осуществляется, как правило, без задержки во времени;<br>
+            - от 5 Мб до 10 Мб может осуществляться с задержкой во времени;<br>
+            - свыше 10 Мб может быть не осуществлена.<br>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
 </section>
+<footer>
+
+</footer>
+
+
+<!--
+<div class="col-md-6">
+  <label for="inputEmail4" class="form-label">Эл. адрес</label>
+  <input type="email" class="form-control" id="inputEmail4">
+</div>
+<div class="col-md-6">
+  <label for="inputPassword4" class="form-label">Пароль</label>
+  <input type="password" class="form-control" id="inputPassword4">
+</div>
+<div class="col-md-6">
+  <label for="inputAddress" class="form-label">Адрес</label>
+  <input type="text" class="form-control" id="inputAddress" placeholder="Проспект Ленина">
+</div>
+<div class="col-md-6">
+  <label for="inputAddress2" class="form-label">Адрес 2</label>
+  <input type="text" class="form-control" id="inputAddress2" placeholder="Квартира">
+</div>
+<div class="col-md-6">
+  <label for="inputCity" class="form-label">Город</label>
+  <input type="text" class="form-control" id="inputCity" placeholder="Брянск">
+</div>
+<div class="col-md-4">
+  <label for="inputState" class="form-label">Область</label>
+  <select id="inputState" class="form-select">
+    <option selected>Выберите...</option>
+    <option>...</option>
+  </select>
+</div>
+<div class="col-md-2">
+  <label for="inputZip" class="form-label">Индекс</label>
+  <input type="text" class="form-control" id="inputZip">
+</div>
+<div class="col-12">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" id="gridCheck">
+    <label class="form-check-label" for="gridCheck">
+      Проверить меня
+    </label>
+  </div>
+</div>
+<div class="col-12">
+  <button type="submit" class="btn btn-primary">Войти в систему</button>
+</div>
+-->
+
+
