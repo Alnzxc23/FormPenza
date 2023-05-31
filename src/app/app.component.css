@@ -209,5 +209,73 @@ form {
 
 }
 .feedInfo{
+  margin-right: 12%;
   margin-left: -13px;
+  font-family: Lato-Regular;
+  font-size: 14px;
+}
+
+footer{
+  font-family: Lato-Regular;
+  font-size: 13px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ececec;
+}
+
+.footerCols{
+  padding-top: 37px;
+}
+
+.foot-content{
+  margin: 0 12% 0 12%;
+}
+
+.info{
+  margin-top: 10px;
+}
+
+.mg-top{
+  margin-top: 25px;
+}
+
+.footer__socialBlock{
+  text-align: right;
+}
+
+.footer__errorText{
+  padding-left: 30px;
+  background: url(/assets/images/text_error_icon.png) 0px 0px no-repeat;
+}
+.footer__feedInfo{
+  text-align: right;
+}
+
+.phone{
+  text-decoration: none;
+  color: black;
+}
+
+.email{
+  text-decoration: none;
+  color: black;
+}
+
+.email:hover{
+  text-decoration: underline;
+}
+
+.map{
+  margin-left: 20px;
+}
+
+.footer__devLink{
+  text-align: right;
+  margin-top: 25px;
+}
+
+.footer__devLink a{
+  display: inline-block;
+  height: 30px;
+  width: 23px;
+  background: url("/assets/images/studio_logo.png") 0px 0px no-repeat;
 }
