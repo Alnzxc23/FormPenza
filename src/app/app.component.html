@@ -5,22 +5,22 @@
         <nav class="navbar navbar-expand-lg text-light lang " style="background-color: #2589de">
           <div class="marg d-flex w-100">
             <div class="col-9 logo d-flex">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                       data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                       aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+              </button>-->
               <a class="navbar" href="index.php">
-                <img src="assets/images/government_logo.png" class="logo" width="45px" heigh="55" alt="logo">
+                <img src="assets/images/government_logo.png" class="logo" width="35"  alt="logo">
               </a>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="badge badge-primary text-wrap text-start" style="width: 19rem;">
-                  <p class="h5 m-0 p-0">Губернатор
+                  <p class="h6 m-0" style="padding-bottom: 2px " >Губернатор
                     <ins>|</ins>
                     Правительство
                   </p>
-                  <p class="text-uppercase h5 m-0 p-0">Пензенской области</p>
-                  <p class="h6 m-0 p-0"> Официальный сайт</p>
+                  <p class="text-uppercase h6 m-0" style="padding-bottom: 2px ">Пензенской области</p>
+                  <p class="h7 m-0"> Официальный сайт</p>
                 </div>
               </div>
             </div>
@@ -34,9 +34,9 @@
               </nav>
             </div>
             <div class="col-1 language d-flex justify-content-center">Обратная связь</div>
-            <div class="d-flex"><a class="eyes"><img src="assets/images/blind_icon.png"></a></div>
+            <div class="d-flex"><a class="eyes"><img src="assets/images/blind_icon.png" alt=""></a></div>
             <div class="col-1" style="line-height: 80px; padding-left: 15px"><img
-              src="assets/images/authorization_icon.png"> Войти
+              src="assets/images/authorization_icon.png" alt=""> Войти
             </div>
           </div>
         </nav>
@@ -58,22 +58,30 @@
           </div>
         </div>
       </div>
-      <div class="main-content ">
+      <div class="main-content">
         <form>
           <div class="row">
             <div class="col-10 p-0 selectItem">
               <label for="inputAppeal" class="form-label">К кому хотите обратиться *</label>
               <select id="inputAppeal" class="form-select" style="background-color: #f9f9f9; width: 96%">
                 <option selected>Губернатор Пензенской области Мельниченко Олег Владимирович</option>
-                <option>...</option>
+                <option>Вице-губернатор Пензенской области Федотов Сергей Валерьевич</option>
+                <option>Председатель Правительства Пензенской области Симонов Николай Петрович</option>
+                <option>Первый заместитель Председателя Правительства Пензенской области Кувайцев Виктор Николаевич</option>
+                <option>Первый заместитель Председателя Правительства Пензенской области Ягов Олег Васильевич</option>
+                <option>Заместитель Председателя Правительства - Министр сельского хозяйстваПензенской области Калентьев Роман Анатольевич</option>
+                <option>Заместитель Председателя Правительства - Министр здравоохранения Пензенской области Космачев Вячеслав Владимирович</option>
+                <option>Первый заместитель Председателя Правительства Пензенской области Костин Алексей Владимирович</option>
+                <option>Заместитель Председателя Правительства Пензенской области Рябихина Лариса Юрьевна</option>
+                <option>Заместитель Председателя Правительства Пензенской области Щекин Владимир Петрович</option>
               </select>
             </div>
           </div>
           <div class="inputItem">
             <div class="row">
               <div class="col-md-3 p-0" style="margin: 0 33px 0 0">
-                <label for="inputSurname inputItem" class="form-label">Фамилия*</label>
-                <input type="password " class="form-control" id="inputSurname">
+                <label for="inputSurname" class="form-label">Фамилия*</label>
+                <input type="password" class="form-control" id="inputSurname">
               </div>
               <div class="col-md-3">
                 <label for="inputEmail" class="form-label">Email*</label>
@@ -83,7 +91,16 @@
                 <label for="inputState" class="form-label">Статус</label>
                 <select id="inputState" class="form-select" style="background-color: #f9f9f9;">
                   <option selected>Выберите из списка</option>
-                  <option>...</option>
+                  <option>Пенсионер</option>
+                  <option>Рабочий</option>
+                  <option>Безработный</option>
+                  <option>Предприниматель</option>
+                  <option>Бюджетник</option>
+                  <option>Студент, учащийся</option>
+                  <option>Военнослужащий или член его семьи</option>
+                  <option>Без определённого места жительства</option>
+                  <option>Осужденный</option>
+                  <option>Самозанятый</option>
                 </select>
               </div>
 
@@ -134,7 +151,7 @@
               <div class="captcha p-0">
                 <label for="inputPassword4" class="form-label">Контрольный код*</label>
                 <div class="col-md-5 d-flex">
-                  <img src="assets/images/captcha.jpg">
+                  <img src="assets/images/captcha.jpg" alt="">
                   <input type="password" class="form-control" id="inputPassword4" style="width: 30%; margin-left: 3%">
                 </div>
               </div>
@@ -150,8 +167,8 @@
               </div>
               <div class="col-12">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
+                  <input class="form-check-input" type="checkbox" id="gridChecks">
+                  <label class="form-check-label" for="gridChecks">
                     <a href="https://pnzreg.ru/virtual-reception/reception-of-citizens/politika-konfidentsialnosti.php">Политика
                       конфиденциальности</a>
                   </label>
@@ -182,7 +199,6 @@
       </div>
     </div>
   </div>
-
 </section>
 <footer>
   <div class="foot-content">
@@ -190,25 +206,25 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-6">
-            <div class="footer__attentionText" style="color: #606060">При использовании материалов официального интернет-портала<br>
+            <div class="footerText" style="color: #606060">При использовании материалов официального интернет-портала<br>
               Правительства Пензенской области ссылка на <a href="http://pnzreg.ru/">www.pnzreg.ru</a> - обязательна
             </div>
           </div>
           <div class="col-6">
-            <div class="footer__socialBlock">
-              <a href="https://ok.ru/group/56185483493552" target="_blank"><img src="/images_v2/ok-icon-footer.svg" alt="" title=""></a>
-              <a href="https://vk.com/penzaoblgov" target="_blank"><img src="/images_v2/vk-icon-footer.svg" alt="" title=""></a>
-              <a href="https://t.me/penzregru" target="_blank"><img src="/images_v2/tg-icon-footer.svg" alt="" title=""></a>
-              <a href="https://rutube.ru/channel/25010333/" target="_blank"><img src="/images_v2/rt-icon-footer.svg" alt="" title=""></a>
+            <div class="socialWeb">
+              <a href="https://ok.ru/group/56185483493552" style="padding-right: 12px" target="_blank"><img src=" assets/images/ok-icon-footer.svg" alt="" title=""></a>
+              <a href="https://vk.com/penzaoblgov" style="padding-right: 12px" target="_blank"><img src="assets/images/vk-icon-footer.svg" alt="" title=""></a>
+              <a href="https://t.me/penzregru" style="padding-right: 12px" target="_blank"><img src="assets/images/tg-icon-footer.svg" alt="" title=""></a>
+              <a href="https://rutube.ru/channel/25010333/" style="padding-right: 12px" target="_blank"><img src="assets/images/rt-icon-footer.svg" alt="" title=""></a>
             </div>
           </div>
         </div>
         <div class="row ">
           <div class="col-6 mg-top">
-            <div class="footer__errorText">Нашли ошибку? Выделите фрагмент текста, и нажмите Ctrl+Enter</div>
+            <div class="errorText">Нашли ошибку? Выделите фрагмент текста, и нажмите Ctrl+Enter</div>
           </div>
           <div class="col-6 info">
-            <div class="footer__feedInfo">
+            <div class="footerInfo">
               <div>440025, г. Пенза, ул. Московская, д. 75,</div>
               <div>т.: <a href="tel:+78412560194" class="phone">(8412) 56-01-94</a>, <a href="tel:+78412550411" class="phone">55-04-11</a>,</div>
               <div>Е-mail: <a href="mailto:pravobl@obl.penza.net" class="email">pravobl@obl.penza.net</a><br>
@@ -218,65 +234,18 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <div class="footerLinks__block">
-              <a href="#" class="blind_footer">Версия для слабовидящих</a>
+            <div class="footerLinks">
+              <a href="#" >Версия для слабовидящих</a>
               <a href="/site-map/" class="map">Карта сайта</a>
             </div>
           </div>
           <div class="col-6">
-            <div class="footer__devLink"><a href="http://www.58studio.ru/" target="_blank"></a></div>
+            <div class="footerLink"><a href="http://www.58studio.ru/" target="_blank"></a></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-
-
-<!--
-<div class="col-md-6">
-  <label for="inputEmail4" class="form-label">Эл. адрес</label>
-  <input type="email" class="form-control" id="inputEmail4">
-</div>
-<div class="col-md-6">
-  <label for="inputPassword4" class="form-label">Пароль</label>
-  <input type="password" class="form-control" id="inputPassword4">
-</div>
-<div class="col-md-6">
-  <label for="inputAddress" class="form-label">Адрес</label>
-  <input type="text" class="form-control" id="inputAddress" placeholder="Проспект Ленина">
-</div>
-<div class="col-md-6">
-  <label for="inputAddress2" class="form-label">Адрес 2</label>
-  <input type="text" class="form-control" id="inputAddress2" placeholder="Квартира">
-</div>
-<div class="col-md-6">
-  <label for="inputCity" class="form-label">Город</label>
-  <input type="text" class="form-control" id="inputCity" placeholder="Брянск">
-</div>
-<div class="col-md-4">
-  <label for="inputState" class="form-label">Область</label>
-  <select id="inputState" class="form-select">
-    <option selected>Выберите...</option>
-    <option>...</option>
-  </select>
-</div>
-<div class="col-md-2">
-  <label for="inputZip" class="form-label">Индекс</label>
-  <input type="text" class="form-control" id="inputZip">
-</div>
-<div class="col-12">
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" id="gridCheck">
-    <label class="form-check-label" for="gridCheck">
-      Проверить меня
-    </label>
-  </div>
-</div>
-<div class="col-12">
-  <button type="submit" class="btn btn-primary">Войти в систему</button>
-</div>
--->
 
 

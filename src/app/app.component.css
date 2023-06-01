@@ -177,6 +177,7 @@ form {
 
 .title{
   margin-top: 40px;
+  padding-bottom: 5px;
 }
 .textArea textarea{
   resize: none;
@@ -238,15 +239,16 @@ footer{
   margin-top: 25px;
 }
 
-.footer__socialBlock{
+.socialWeb{
   text-align: right;
+  margin-top: 2%;
 }
 
-.footer__errorText{
+.errorText{
   padding-left: 30px;
   background: url(/assets/images/text_error_icon.png) 0px 0px no-repeat;
 }
-.footer__feedInfo{
+.footerInfo{
   text-align: right;
 }
 
@@ -268,14 +270,18 @@ footer{
   margin-left: 20px;
 }
 
-.footer__devLink{
+.footerLink{
   text-align: right;
   margin-top: 25px;
+
 }
 
-.footer__devLink a{
+.footerLink a{
   display: inline-block;
   height: 30px;
   width: 23px;
   background: url("/assets/images/studio_logo.png") 0px 0px no-repeat;
+}
+a{
+
 }
